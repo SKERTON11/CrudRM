@@ -55,7 +55,7 @@ if (!$d) {
 
                     <div class="card-body">
 
-                        <form method="POST" action="update.php">
+                        <form method="POST" action="update.php" enctype="multipart/form-data">
 
                             <input type="hidden" name="id" value="<?= $d['id_produk'] ?>">
 
@@ -95,6 +95,14 @@ if (!$d) {
                                     name="deskripsi"
                                     class="form-control"
                                     rows="3"><?= $d['deskripsi'] ?></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Model 3D / Gambar</label>
+                                <input type="file" name="gambar" class="form-control" accept=".glb,.gltf,image/*">
+                                <?php if ($d['gambar']): ?>
+                                    <div class="form-text">File saat ini: <?= htmlspecialchars($d['gambar']) ?></div>
+                                <?php endif; ?>
                             </div>
 
                             <div class="d-flex gap-2">
