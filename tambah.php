@@ -1,4 +1,15 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("location:login.php");
+    exit;
+}
+
+include 'db.php';
+?>
+
+<?php
 include 'db.php';
 
 $nama_produk = trim($_POST['nama_produk'] ?? '');
