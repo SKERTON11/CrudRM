@@ -13,7 +13,7 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak Randu Mekar</title>
+    <title>Tentang Randu Mekar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -67,10 +67,10 @@ if (!isset($_SESSION['username'])) {
                         <a class="nav-link" href="produk.php">Produk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tentang.php">Tentang</a>
+                        <a class="nav-link active" href="tentang.php">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="kontak.php">Kontak</a>
+                        <a class="nav-link" href="kontak.php">Kontak</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-danger" href="logout.php">Logout</a>
@@ -86,15 +86,10 @@ if (!isset($_SESSION['username'])) {
                 <div class="col-lg-8">
                     <div class="card page-card p-4">
                         <div class="card-body">
-                            <p class="section-title">Kontak Randu Mekar</p>
-                            <h1 class="fw-bold">Hubungi kami untuk informasi produk dan pesanan</h1>
-                            <p class="lead text-muted mt-4">Kami siap membantu dengan pertanyaan produk, pemesanan, atau layanan pengiriman.</p>
-                            <ul class="list-unstyled mt-4">
-                                <li class="mb-3"><strong>Telepon:</strong> 0877-5228-7106</li>
-                                <li class="mb-3"><strong>Email:</strong> dhafamuhammad839@gmail.com</li>
-                                <li class="mb-3"><strong>Alamat:</strong> Sukoharjo, Jawa Tengah</li>
-                            </ul>
-                            <a href="tel:+6287752287106" class="btn btn-primary">Hubungi Sekarang</a>
+                            <p class="section-title">Tentang Randu Mekar</p>
+                            <h1 class="fw-bold">Randu Mekar — Kualitas tidur yang nyaman</h1>
+                            <p class="lead text-muted mt-4">Randu Mekar adalah toko kasur, bantal, dan guling yang mengutamakan kenyamanan, kualitas bahan, dan layanan langsung dari produsen.</p>
+                            <p class="text-muted">Kami membantu pelanggan mendapatkan produk tidur terbaik dengan harga kompetitif, bebas perantara, dan dukungan layanan personal di Sukoharjo dan sekitarnya. Setiap produk disesuaikan untuk rasa nyaman terbaik di setiap malam.</p>
                         </div>
                     </div>
                 </div>

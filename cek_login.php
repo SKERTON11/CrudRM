@@ -18,8 +18,11 @@ if ($cek > 0) {
 
     $_SESSION['username'] = $username;
 
-    header("location:dashboard.php");
+    header("location:index.php");
+    exit;
+
 } else {
 
     echo "Username atau Password salah";
 }
+?>

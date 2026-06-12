@@ -7,12 +7,11 @@ if (!isset($_SESSION['username'])) {
 }
 
 include 'db.php';
-?>
 
-<?php
-include 'db.php';
-
-$id = trim($_GET['id'] ?? '');
+$id = '';
+if (isset($_GET['id'])) {
+    $id = trim($_GET['id']);
+}
 
 if ($id === '' || !ctype_digit($id)) {
     header('Location: index.php');
